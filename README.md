@@ -1,2 +1,2 @@
 # used-car-price-prediction-ml
-End-to-end data analysis and machine learning project predicting used car prices using 1M+ vehicle records with Python, pandas, scikit-learn, and data visualization.
+# An end-to-end data science project that analyzes over 1 million used car listings to identify the key factors influencing resale prices. The project includes data cleaning, exploratory data analysis (EDA), feature engineering, and machine learning models (Linear Regression and Decision Tree Regression) to predict vehicle prices and support data-driven pricing decisions.

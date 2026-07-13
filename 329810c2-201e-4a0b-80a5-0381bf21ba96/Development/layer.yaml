@@ -1,0 +1,394 @@
+id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+name: Development
+type: 1
+canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+blocks:
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Extracts and visualizes the top 10 most important features from a decision
+    tree model, displaying their importance scores in a ranked horizontal bar chart
+    with dark styling.
+  height: 1000
+  id: 19201748-29a4-41ee-9b54-4d19fd9c5d6b
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: tree_feature_importance
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 7500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: "Summarizes business conclusions from vehicle pricing analysis, identifying\
+    \ Decision Tree as the best model (R\xB2 ~67%) with mileage and brand as key value\
+    \ drivers, plus actionable insights for dealerships and buyers."
+  height: 1000
+  id: 328a42ff-76ee-42be-b093-d58181ba49ae
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: car_price_model_analysis
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 8000
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: "Trains a linear regression pipeline with preprocessing (imputation\
+    \ for missing values, one-hot encoding for categorical features) and evaluates\
+    \ performance using MAE, RMSE, and R\xB2 metrics. Currently fails due to NaN values\
+    \ in data needing preprocessing resolution."
+  height: 1000
+  id: 48bc6997-4d67-4679-94a0-0fe43c61186c
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: linear_regression_pipeline
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 6000
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Analyzes and visualizes car price distribution across ownership histories,
+    displaying mean prices in a formatted table and a dark-themed boxplot showing
+    price ranges by owner type (First, Second, Third, Fourth+ owners).
+  height: 1000
+  id: 581dee3b-f6e2-4e41-a9d4-6f0eb67d2e57
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: price_by_owner_analysis
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 3500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: 'Loads and cleans 1M used car records: removes 5K duplicates, fixes
+    invalid values (negative horsepower), standardizes text fields, imputes missing
+    values (median for numeric, mode for categorical), and engineers car age feature
+    for ML modeling.'
+  height: 1000
+  id: 597cef58-f818-49aa-83a2-ffe965d0b211
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: ml_setup_config
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 0
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Splits feature and target data into 80/20 train-test sets with fixed
+    random seed for reproducible model validation.
+  height: 1000
+  id: 7c7a62ce-4f12-406a-b2ba-6e1cfc042d2a
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: train_test_split_data
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 5500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: "Compares Linear Regression and Decision Tree model performance using\
+    \ MAE, RMSE, and R\xB2 metrics to evaluate prediction accuracy on test data."
+  height: 1000
+  id: 7d3a45ea-242f-4083-b51e-7d7cb44bbf21
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: model_comparison_metrics
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 7000
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Visualizes used car price distribution with histogram, KDE curve, and
+    key statistics (mean, median, standard deviation, percentiles) displayed in a
+    dark-themed chart and summary table.
+  height: 1000
+  id: 974e84af-6434-44a1-8c98-6b606b72b055
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: Price Distribution and Overall Market
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Sets up training dataset by separating car features (16 variables)
+    and target (Price), then identifies 5 categorical and 11 numerical features for
+    model preprocessing.
+  height: 1000
+  id: a031d7ba-a63c-4b04-85f3-fab3278c1d5a
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: prepare_car_data
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 5000
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Analyzes the relationship between vehicle mileage and price by computing
+    Pearson correlation and creating a scatter plot with trend line to visualize price
+    depreciation patterns.
+  height: 1000
+  id: ac962436-db88-4890-9ebe-86c7a2a409ae
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: mileage_price_correlation
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 1500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Generates a dark-themed correlation heatmap for numeric car features
+    and ranks Price correlations. Reveals that vehicle Age and Year are strongest
+    predictors of price, while most attributes show minimal correlation.
+  height: 1000
+  id: aea396d2-6e4f-461c-bcd9-a61220f16347
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: correlation_analysis_heatmap
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 4000
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings:
+    compute_environment_type: 2
+    ephemeral_storage_gib: 20
+    size: large
+  description: "Trains a Decision Tree regression model with preprocessing, evaluates\
+    \ performance using MAE, RMSE, and R\xB2 metrics on test data."
+  height: 1000
+  id: b6e2128c-bc0c-4e14-99d2-c83b324bcdb3
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: random_forest_regressor
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 6500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: "Analyzes the relationship between car age and price using scatter\
+    \ plot visualization and calculates average prices grouped by age brackets (0\u2013\
+    3, 4\u20136, 7\u201310, 11\u201315, 16\u201320, 20+ years)."
+  height: 1000
+  id: be05623b-393b-4026-aad5-33d91a90d96d
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: car_age_price_analysis
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 1000
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Calculates and visualizes the top 10 car brands by average price using
+    a horizontal bar chart with custom dark theme styling.
+  height: 1000
+  id: d40c4866-5611-4522-8aad-3dfe07dd86c0
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: top_brands_avg_price
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 2000
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: "Analyzes car pricing patterns and identifies key business insights:\
+    \ vehicle age and brand are the strongest price drivers; Mercedes has the highest\
+    \ average resale value (\u20B92.54M); transmission and fuel type have minimal\
+    \ price impact. Results guide predictive model feature selection."
+  height: 1000
+  id: d82b9329-aeb5-401c-8e64-1e0b736325f8
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: car_price_analysis_findings
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 4500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Cleans fuel type data (standardizing casing & fixing typos), then generates
+    a boxplot showing car price distribution across fuel types with a dark theme and
+    millions-formatted Y-axis.
+  height: 1000
+  id: ddb07342-06b0-420e-a434-292553d0943d
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: price_by_fuel_type
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 2500
+- auto_size: false
+  canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  compute_settings: null
+  description: Analyzes car price distribution across transmission types. Calculates
+    mean prices and creates a styled boxplot visualization comparing price ranges
+    for automatic vs. manual transmissions on a sample of 50,000 records.
+  height: 1000
+  id: def4efcc-bb05-418c-b41b-be83a330fd94
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  name: transmission_price_analysis
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 3000
+edges:
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: 0e23abcc-3a07-476d-8d0b-ec285f31526a
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: 7d3a45ea-242f-4083-b51e-7d7cb44bbf21
+  target: 19201748-29a4-41ee-9b54-4d19fd9c5d6b
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: 5465ef2e-3415-45a5-ab7c-a2dbeb88a6f8
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: ddb07342-06b0-420e-a434-292553d0943d
+  target: def4efcc-bb05-418c-b41b-be83a330fd94
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: 5f6f9bfc-dd8c-4a98-baea-826d456d69b5
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: d82b9329-aeb5-401c-8e64-1e0b736325f8
+  target: a031d7ba-a63c-4b04-85f3-fab3278c1d5a
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: 721a5e40-61cd-42e2-abc7-c9a8441c60e0
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: 7c7a62ce-4f12-406a-b2ba-6e1cfc042d2a
+  target: 48bc6997-4d67-4679-94a0-0fe43c61186c
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: 79195f08-d441-4b69-9f6a-f081329a5b89
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: b6e2128c-bc0c-4e14-99d2-c83b324bcdb3
+  target: 7d3a45ea-242f-4083-b51e-7d7cb44bbf21
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: 8c56e92f-b22f-4bc3-88f7-067a3150c41e
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: 19201748-29a4-41ee-9b54-4d19fd9c5d6b
+  target: 328a42ff-76ee-42be-b093-d58181ba49ae
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: 8fe18548-0fcb-466f-af19-a7baa5efd0ef
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: 581dee3b-f6e2-4e41-a9d4-6f0eb67d2e57
+  target: aea396d2-6e4f-461c-bcd9-a61220f16347
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: b71b77fc-28d8-4a1e-a739-6fdc469d0e9f
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: a031d7ba-a63c-4b04-85f3-fab3278c1d5a
+  target: 7c7a62ce-4f12-406a-b2ba-6e1cfc042d2a
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: b8a7e0d3-7811-40dc-86c4-87829d5fb062
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: def4efcc-bb05-418c-b41b-be83a330fd94
+  target: 581dee3b-f6e2-4e41-a9d4-6f0eb67d2e57
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: c20750e6-b9b8-42e5-8eaf-665c70bb3b0a
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: 48bc6997-4d67-4679-94a0-0fe43c61186c
+  target: b6e2128c-bc0c-4e14-99d2-c83b324bcdb3
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: c645a3bd-61e2-4960-aec8-a293ef6928c6
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: 974e84af-6434-44a1-8c98-6b606b72b055
+  target: be05623b-393b-4026-aad5-33d91a90d96d
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: caaf021c-70f8-424a-b4df-0f450bb3fd5d
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: d40c4866-5611-4522-8aad-3dfe07dd86c0
+  target: ddb07342-06b0-420e-a434-292553d0943d
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: d60fecf0-37d0-44af-9a7b-d0d83ba60055
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: ac962436-db88-4890-9ebe-86c7a2a409ae
+  target: d40c4866-5611-4522-8aad-3dfe07dd86c0
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: de0a3157-ceb1-4967-be2a-9f2e709fe7ee
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: be05623b-393b-4026-aad5-33d91a90d96d
+  target: ac962436-db88-4890-9ebe-86c7a2a409ae
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: e3014b2f-0702-49aa-9538-c55d9f6fdd36
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: 597cef58-f818-49aa-83a2-ffe965d0b211
+  target: 974e84af-6434-44a1-8c98-6b606b72b055
+- canvas_id: 329810c2-201e-4a0b-80a5-0381bf21ba96
+  id: ff269279-03e5-47c3-b36d-0fb99cca361b
+  layer_id: cfb2055c-4352-4b7f-b91f-3c9d542a82fd
+  source: aea396d2-6e4f-461c-bcd9-a61220f16347
+  target: d82b9329-aeb5-401c-8e64-1e0b736325f8
